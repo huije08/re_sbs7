@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+using namespace std;
 
 int packet = 1;
 
@@ -55,16 +56,35 @@ int main()
     // 
     // std::cout << a;
 
-    int x = 10;
-    int y = 20;
-
-    std::cout << "B" << x << y << std::endl;
-    
-    Swap(x, y);
-
-    std::cout << "A" << x << y;
+    // int x = 10;
+    // int y = 20;
+    // 
+    // std::cout << "B" << x << y << std::endl;
+    // 
+    // Swap(x, y);
+    // 
+    // std::cout << "A" << x << y;
 
     
 #pragma endregion
 
+#pragma region 동적 할당
+
+    int* pointer = new int;
+    *pointer = 10;
+    cout << *pointer << endl;
+    delete pointer;
+    pointer = new int[5];
+
+    for (int i = 0; i < 5; i++)
+    {
+        pointer[i] = i * 10 +10;
+        cout << "pointer[" << i << "] : " << pointer[i] << endl;
+    }
+
+    delete[] pointer;
+
+#pragma endregion
+
+    
 }

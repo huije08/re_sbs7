@@ -3,11 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\huije\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\re_sbs7\\program2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BF04789D-E2EA-4849-BD39-167F5A773A18}|..\\Class1th(Stream)\\Class1th(Stream).vcxproj|C:\\Users\\huije\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\re_sbs7\\Class1th(Stream)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{768E3706-BD71-4AF9-8430-49C8286DEBB2}|program2.vcxproj|C:\\Users\\huije\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\re_sbs7\\program2\\program2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{768E3706-BD71-4AF9-8430-49C8286DEBB2}|program2.vcxproj|solutionrelative:program2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B779E829-102F-42FE-BA1F-DE8359BBFEEF}|..\\Class2th (Class)\\Class2th (Class).vcxproj|C:\\Users\\huije\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\re_sbs7\\Class2th (Class)\\Class2th (Class).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF04789D-E2EA-4849-BD39-167F5A773A18}|..\\Class1th(Stream)\\Class1th(Stream).vcxproj|C:\\Users\\huije\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\re_sbs7\\Class1th(Stream)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,30 +20,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Class2th (Class).cpp",
+              "DocumentMoniker": "C:\\Users\\huije\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\re_sbs7\\Class2th (Class)\\Class2th (Class).cpp",
+              "RelativeDocumentMoniker": "..\\Class2th (Class)\\Class2th (Class).cpp",
+              "ToolTip": "C:\\Users\\huije\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\re_sbs7\\Class2th (Class)\\Class2th (Class).cpp",
+              "RelativeToolTip": "..\\Class2th (Class)\\Class2th (Class).cpp",
+              "ViewState": "AgIAABgAAAAAAAAAAAAuwFkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-05-18T08:18:22.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\huije\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\re_sbs7\\Class1th(Stream)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class1th(Stream)\\Source.cpp",
               "ToolTip": "C:\\Users\\huije\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\re_sbs7\\Class1th(Stream)\\Source.cpp",
               "RelativeToolTip": "..\\Class1th(Stream)\\Source.cpp",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAEUAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAqwEUAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-05-14T09:39:08.689Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "program2.cpp",
               "DocumentMoniker": "C:\\Users\\huije\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\re_sbs7\\program2\\program2.cpp",
               "RelativeDocumentMoniker": "program2.cpp",
               "ToolTip": "C:\\Users\\huije\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\re_sbs7\\program2\\program2.cpp",
               "RelativeToolTip": "program2.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAuwDUAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAGgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-05-13T09:08:35.078Z",
               "EditorCaption": ""

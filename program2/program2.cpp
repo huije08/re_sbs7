@@ -1,90 +1,106 @@
-﻿// program2.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
-#include <iostream>
+﻿#include <iostream>
 using namespace std;
-
-int packet = 1;
-
-void Swap(int &parameterX, int &parameterY)
+class Soldier
 {
-    int a = parameterX;
-    parameterX = parameterY;
-    parameterY = a;
-}
+private:
+    int health=0;
+    int defense=0;
+    static int count;
+
+public:
+    Soldier()
+    {
+        cout << "Created Soldier" << endl;
+    };
+    ~Soldier()
+    {
+        count++;
+        cout << "Destruction Count:" << count << endl;
+    };
+};
+
+class Sprite
+{
+private:
+    int* pixels = nullptr;
+
+public:
+    Sprite()
+    {
+        if (pixels == nullptr)
+        {
+            pixels = new int(1024);
+        }
+    };
+
+    Sprite(Sprite & clone)
+    {
+        pixels = clone.pixels;
+    };
+
+    ~Sprite()
+    {
+        delete pixels;
+    };
+
+};
+
+int Soldier::count = 0;
 
 int main()
 {
-#pragma region 스트림
-    // 시간의 흐름에 따라 연속적으로 발생하는 데이터의 흐름입니다.
+#pragma region 생성자
+    // 클래스의 인스턴스가 생성되는 시점에서 자동으로 
+    // 호출되는 특수한 멤버 함수 입니다.
 
-    //int count=0;
+    // Soldier soldier;
+
+    // 생성자의 경우 객체가 생성될 때 단 한번만 호출되며,
+    // 생성자는 반환형이 존재하지 않기 때문에 생성자가
+    // 호출되기 전에 객체에 대한 메모리는 할당되지 않습니다.
+#pragma endregion
+
+#pragma region 소멸자
+    // 객체가 소멸될 때 자동으로 실행되는 클래스의
+    // 특수한 멤버 함수입니다.
+
+    // Soldier* list[3];
+    // 
+    // for (int i = 0; i < 3; i++)
+    // {
+    //     list[i] = new Soldier;
+    // }
+    // 
+    // for (int i = 0; i < 3; i++)
+    // {
+    //     delete list[i];
+    // }
+    // 소멸자는 객체가 메모리에서 해제될 때 단 한 번만
+    // 호출되며, 소멸자에는 매개 변수를 생성하여 사용할 
+    // 수 없습니다.
+#pragma endregion
+
+#pragma region 얕은 복사
+    // 객체를 복사할 때 주소 값을 복사하여 같은
+    // 메모리 공간을 가리키게 하는 복사입니다.
+
+    //int* pointer = new int;
+    //int* address = pointer;
+    //*pointer = 100;
     //
-    //std::cout << "Series:";
-    //std::cin >> count;
-    //for (int i = 0; i < count; i++)
-    //{
-    //    std::cout << "PlayStation" <<i+1 << std::endl;
-    //}
+    //cout << "pointer가 가리키는 값" << pointer << endl;
+    //cout << "address가 가리키는 값" << address << endl;
 
-    // 스트림은 운영 체제에 의해 생성되며, 스트림 자체에 버퍼라는
-    // 임시 메모리 공간이 존재합니다
-    
-    
-    
+    //delete pointer;
+    // 얕은 복사의 경우 같은 객체가 서로 같은 메모리 공간을 
+    // 참조하고 있기 때문에 하나의 객체로 값을 변경하게 되면
+    // 서로 참조된 객체도 함께 영향을 받습니다.
 #pragma endregion
 
-#pragma region 범위 지정 연산자
-    // 여러 범위에서 사용되는 식별자를 구분하는데 
-    // 사용하는 연산자 입니다.
-
-    // int packet = 100;
-    // 
-    // std::cout << "packet지역변수의값 : " << packet << std::endl;
-    // std::cout << "packet전역변수의값 : " << ::packet << std::endl;
-
-    // 범위 지정 연산자는 전역변수와 같은 이름의 지역변수가
-    // 선언되었을 때 가장 가까운 범위에 선언된 변수의 이름을
-    // 사용하는 범위 규칙이 존재하기 때문에 전역변수가 호출되지 않습니다
+#pragma region 깊은 복사
+    // 객체를 복사할때 참조값이 아닌 객체 자체로 새로 
+    // 복사하여 서로 다른 메모리를 생성하는 복사입니다.
 #pragma endregion
 
-#pragma region 참조자
-    // 하나의 변수에 또 다른 이름을 지정하는 지정자 입니다.
-    // int room = 10;
-    // 
-    // int& a = room;
-    // 
-    // std::cout << a;
-
-    // int x = 10;
-    // int y = 20;
-    // 
-    // std::cout << "B" << x << y << std::endl;
-    // 
-    // Swap(x, y);
-    // 
-    // std::cout << "A" << x << y;
-
-    
-#pragma endregion
-
-#pragma region 동적 할당
-
-    int* pointer = new int;
-    *pointer = 10;
-    cout << *pointer << endl;
-    delete pointer;
-    pointer = new int[5];
-
-    for (int i = 0; i < 5; i++)
-    {
-        pointer[i] = i * 10 +10;
-        cout << "pointer[" << i << "] : " << pointer[i] << endl;
-    }
-
-    delete[] pointer;
-
-#pragma endregion
-
-    
+    return 0;
 }
